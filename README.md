@@ -48,7 +48,7 @@ The basic functionality of the application is very simple. The user can create a
 
 While the MVP is quite simple, I have plans to implement additional features that I have not yet been able to implement. For example, <br> 1. The ability for the user to search for terms they have added.<br> 2. To have a seperate bank of pre-filled definitions accessable to the user.<br> 3. Improve the database structure so that the user can have two different wordbanks, the second one being used for words the user has grown comfortable with. The user would be able to "push" words between word banks. 
 <p align="left">
-  <img width="383" height="250" src="https://imgur.com/iPOcIQX.png">
+  <img width="383" height="250" src="https://imgur.com/LcHQjx4">
 </p>
 
 ## Risk Assessment
