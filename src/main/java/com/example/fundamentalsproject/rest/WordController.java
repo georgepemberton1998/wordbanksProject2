@@ -16,7 +16,6 @@ public class WordController {
     public WordController(WordService wordService) {
         this.wordService = wordService;
     }
-
     @GetMapping("/")
     public List<UserBank> getAllWords(){
         return this.wordService.readAllWords();
