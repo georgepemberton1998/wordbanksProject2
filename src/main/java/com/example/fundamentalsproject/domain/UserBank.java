@@ -16,14 +16,14 @@ public class UserBank {
     private String word;
 
     @Column
-    private String description;
+    private String definition;
 
     public UserBank() {
     }
 
-    public UserBank(final String word, final String description) {
+    public UserBank(final String word, final String definition) {
         this.word = word;
-        this.description = description;
+        this.definition = definition;
     }
 
     public Long getId() {
@@ -42,11 +42,11 @@ public class UserBank {
         this.word = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDefinition() {
+        return definition;
     }
 
-    public void setDescription(final String description) {
-        this.description = description;
+    public void setDefinition(final String definition) {
+        this.definition = definition;
     }
 }

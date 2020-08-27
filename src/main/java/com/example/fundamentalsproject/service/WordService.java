@@ -33,7 +33,7 @@ public class WordService {
     public UserBank updateWord(Long id, UserBank userBank){
         UserBank update = findWordById(id);
         update.setWord(userBank.getWord());
-        update.setDescription(userBank.getDescription());
+        update.setDefinition(userBank.getDefinition());
         return this.repo.save(update);
     }
 
