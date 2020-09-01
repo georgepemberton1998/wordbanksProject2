@@ -80,8 +80,10 @@ HTML & CSS - talk about ports n shit <br>
 java script???
 
 ### Back-End
-Java - maven - intellij
-springboot
+The back-end code for this project handles database manipulation; adding the CRUD functionality to the databases which are created by the user in the front-end. This project utilizes Java and other supporting technologies such as Maven & the Springboot library. 
+
+The back-end also works to make my ERD diagram come into fruition. I used Springs inbuilt relationship functionality to create the Many-to-One and One-to-Many relationships needed between my User Details and User Word databases. 
+
 
 ## Testing
 unit testing in Junit 
