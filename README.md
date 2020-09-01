@@ -60,7 +60,6 @@ While in reality the risks associated with this project are relatively low, a ri
 
 ## Creation
 
-STAYS EMPTY
 
 ### Planning
 
@@ -89,9 +88,6 @@ The back-end also works to make my ERD diagram come into fruition. I used Spring
 
 
 Finally, it was used to initialise the web server & the relevant domain addresses, open on port 8080.
-
-t
-
 
 ## Testing
 unit testing in Junit 
