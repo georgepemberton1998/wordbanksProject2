@@ -1,5 +1,5 @@
 # Fundamentals Project
-This Project aims to utilize all of the technologies I have learnt so far in the academy. These include: Java, Jira, etc etc etc etc. Below I will illustrate how I have applied these technologies I have learnt to create a web based application that conforms to the CRUD (Create, Read, Update and Remove) criteria. 
+This Project aims to utilize all of the technologies I have learnt so far in the academy. These include: Intellij, Jira, Springboot, CircleC & GCP. Below I will illustrate how I have applied these technologies I have learnt to create a web based application that conforms to the CRUD (Create, Read, Update and Remove) criteria. 
 
 
 ---
@@ -38,11 +38,6 @@ Here I have included some snapshots of the application working.
 <p align="left">
   <img width="383" height="250" src="https://i.imgur.com/rFfg6L6.png">
 </p>
-
-
- 
-
-
 ## Design
 The basic functionality of the application is very simple. The user can create an account, log into their account and create their own word bank. However, throughout this project I have used many tools to streamline production (See, [Planning](#planning), [Version Control](#Version-Control), etc.. ). 
 
@@ -60,9 +55,12 @@ While in reality the risks associated with this project are relatively low, a ri
 
 ## Creation
 
-STAYS EMPTY
-
 ### Planning
+This project in its very nature required an agile planning strategy. I learned the technologies required as I progressed through the project. This made it impossible for me to properly plan the project at the begining. Also, as I learnt the relevant technologies, previous ideas proved too difficult considering the time constraint. Because of this, I used Jira to plan my project, which allowed for easily digestable, agile planning. Below I have included a snapshot of my backlog taken just before I had my application up and running. 
+
+<p align="left">
+  <img width="383" height="250" src="https://i.imgur.com/7z9SHO2.png">
+</p>
 
 ### Version Control
 This project uses git as the version control system and Github as the Host. Intellij makes it incredibly easy to maintain an agile github repository with inbuilt functionality allowing commits and pushes to be made with one button. 
@@ -80,8 +78,15 @@ HTML & CSS - talk about ports n shit <br>
 java script???
 
 ### Back-End
-Java - maven - intellij
-springboot
+The back-end code for this project handles database manipulation; adding the CRUD functionality to the databases which are created by the user in the front-end. This project utilizes Java and other supporting technologies such as Maven & the Springboot library. 
+
+
+
+The back-end also works to make my ERD diagram come into fruition. I used Springs inbuilt relationship functionality to create the Many-to-One and One-to-Many relationships needed between my User Details and User Word databases. 
+
+
+
+Finally, it was used to initialise the web server & the relevant domain addresses, open on port 8080.
 
 ## Testing
 unit testing in Junit 
