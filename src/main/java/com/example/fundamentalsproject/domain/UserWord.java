@@ -1,8 +1,6 @@
 package com.example.fundamentalsproject.domain;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 public class UserWord {

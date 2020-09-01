@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/WelcomePage.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -24,9 +25,10 @@ splash potion of weakness in Minecraft".
 <br>
 To begin becoming the person you can become, simply enter a Username below.
 <br>
-
-<form method="get" action="CreatePage.html">
-    <button type="submit">Continue</button>
+<form id="UserForm" action="CreatePage.html">
+    <label for="username">username</label><br>
+    <input type="text" id="username" name="username"><br>
+    <input type="submit" onclick="submitUser()" value="Continue">
 </form>
 </body>
 </html>

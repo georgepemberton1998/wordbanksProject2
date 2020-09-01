@@ -17,7 +17,7 @@ public class UserDeets {
     private String UserName;
 
     @OneToMany(mappedBy = "UserDeets", fetch = FetchType.EAGER)
-    private List<UserWord> notes = new ArrayList<>();
+    private List<UserWord> words = new ArrayList<>();
 
     public UserDeets(){}
 
@@ -25,7 +25,9 @@ public class UserDeets {
         UserName = userName;
     }
 
-    public Long getId() { return id;}
+    public Long getId() {
+        return id;
+    }
 
     public void setId(Long id) {
         this.id = id;
@@ -39,12 +41,13 @@ public class UserDeets {
         UserName = userName;
     }
 
-    public List<UserWord> getNotes() {
-        return notes;
+    public List<UserWord> getWords() {
+        return words;
     }
 
-    public void setNotes(List<UserWord> notes) {
-        this.notes = notes;
+    public void setWords(List<UserWord> words) {
+        this.words = words;
     }
 }
+
 

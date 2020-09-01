@@ -22,8 +22,6 @@ public class WordService {
         this.repo = repo;
         this.mapper = mapper;
     }
-
-
     private userWordDTO mapToDTO(UserWord userWord) {
         return this.mapper.map(userWord, userWordDTO.class);
     }
