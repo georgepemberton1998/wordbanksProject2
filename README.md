@@ -52,7 +52,7 @@ While the MVP is quite simple, I have plans to implement additional features tha
 While in reality the risks associated with this project are relatively low, a risk assessment is still neccessary. Below is a collection of the risks I have identified with their corresponding likelihood & impact.
 
 <p align="left">
-  <img width="383" height="250" src="https://www.austinpetsalive.org/assets/placeholder/cat-placeholder-tall.svg">
+  <img width="383" height="250" src="https://i.imgur.com/KvHGeft.png">
 </p>
 
 ## Creation
