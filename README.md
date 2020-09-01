@@ -38,6 +38,7 @@ Here I have included some snapshots of the application working.
 <p align="left">
   <img width="383" height="250" src="https://i.imgur.com/rFfg6L6.png">
 </p>
+
 ## Design
 
 The basic functionality of the application is very simple. The user can create an account, log into their account and create their own word bank. However, throughout this project I have used many tools to streamline production (See, [Planning](#planning), [Version Control](#Version-Control), etc.. ). 
