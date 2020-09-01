@@ -1,12 +1,11 @@
 package com.example.fundamentalsproject.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-public class UserBank {
+public class UserWord {
 
     @Id
     @GeneratedValue
@@ -18,10 +17,13 @@ public class UserBank {
     @Column
     private String definition;
 
-    public UserBank() {
+    @ManyToOne(targetEntity = UserDeets.class)
+    private UserDeets UserDeets;
+
+    public UserWord() {
     }
 
-    public UserBank(final String word, final String definition) {
+    public UserWord(String word, String definition) {
         this.word = word;
         this.definition = definition;
     }
@@ -48,5 +50,13 @@ public class UserBank {
 
     public void setDefinition(final String definition) {
         this.definition = definition;
+    }
+
+    public UserDeets getUserDeets() {
+        return UserDeets;
+    }
+
+    public void setUserDeets(UserDeets userDeets) {
+        UserDeets = userDeets;
     }
 }

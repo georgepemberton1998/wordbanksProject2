@@ -1,13 +1,16 @@
 package com.example.fundamentalsproject.rest;
 
 import com.example.fundamentalsproject.domain.UserDeets;
+import com.example.fundamentalsproject.dto.UserDeetsDTO;
 import com.example.fundamentalsproject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@RestController
 public class UserController {
 
     private final UserService userService;
@@ -18,9 +21,14 @@ public class UserController {
     }
 
 
+    @GetMapping("/")
+    public ResponseEntity<List<UserDeetsDTO>> getAllUsers() {
+        return ResponseEntity.ok(this.userService.readAllUsers());
+    }
+
     @PostMapping("/createUser")
-    public UserDeets createUser(@RequestBody UserDeets userDeets){
-        return this.userService.createUser(userDeets);
+    public ResponseEntity<UserDeetsDTO> createUser(@RequestBody UserDeets userDeets){
+        return new ResponseEntity<UserDeetsDTO>(this.userService.createUser(userDeets), HttpStatus.CREATED);
     }
 
 

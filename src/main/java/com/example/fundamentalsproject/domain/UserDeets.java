@@ -1,9 +1,12 @@
 package com.example.fundamentalsproject.domain;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "notes"})
 
+@Entity
 public class UserDeets {
 
     @Id
@@ -13,17 +16,16 @@ public class UserDeets {
     @Column
     private String UserName;
 
-    @Column
-    private String UserPass;
+    @OneToMany(mappedBy = "UserDeets", fetch = FetchType.EAGER)
+    private List<UserWord> notes = new ArrayList<>();
 
-    public UserDeets(String userName, String userPass) {
+    public UserDeets(){}
+
+    public UserDeets(String userName) {
         UserName = userName;
-        UserPass = userPass;
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id;}
 
     public void setId(Long id) {
         this.id = id;
@@ -37,12 +39,12 @@ public class UserDeets {
         UserName = userName;
     }
 
-    public String getUserPass() {
-        return UserPass;
+    public List<UserWord> getNotes() {
+        return notes;
     }
 
-    public void setUserPass(String userPass) {
-        UserPass = userPass;
+    public void setNotes(List<UserWord> notes) {
+        this.notes = notes;
     }
 }
 

@@ -1,10 +1,29 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
 
+Here you will be able to create entries.
+<br>
+<form action="action_page.php" method="post">
+
+    <div class="container">
+        <br>
+        <label for="word"><b>Word</b></label><br>
+        <input type="text" placeholder="Enter word" name="word" required><br>
+        <label for="definition"><b>Definition</b></label><br>
+        <textarea type="text" placeholder="Enter Definition" name="definition" required></textarea><br><br>
+        <button type="submit">Submit</button>
+
+    </div>
+
+</form>
+<br>
+<a href="ReadDeletePage.html">Read your entries</a>
 </body>
 </html>
