@@ -60,8 +60,11 @@ While in reality the risks associated with this project are relatively low, a ri
 
 ## Creation
 
-
 ### Planning
+
+<p align="left">
+  <img width="383" height="250" src="https://i.imgur.com/7z9SHO2.png">
+</p>
 
 ### Version Control
 This project uses git as the version control system and Github as the Host. Intellij makes it incredibly easy to maintain an agile github repository with inbuilt functionality allowing commits and pushes to be made with one button. 
