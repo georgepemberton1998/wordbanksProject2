@@ -82,7 +82,15 @@ java script???
 ### Back-End
 The back-end code for this project handles database manipulation; adding the CRUD functionality to the databases which are created by the user in the front-end. This project utilizes Java and other supporting technologies such as Maven & the Springboot library. 
 
+
+
 The back-end also works to make my ERD diagram come into fruition. I used Springs inbuilt relationship functionality to create the Many-to-One and One-to-Many relationships needed between my User Details and User Word databases. 
+
+
+
+Finally, it was used to initialise the web server & the relevant domain addresses, open on port 8080.
+
+t
 
 
 ## Testing
