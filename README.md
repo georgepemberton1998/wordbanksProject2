@@ -1,5 +1,5 @@
 # Fundamentals Project
-This Project aims to utilize all of the technologies I have learnt so far in the academy. These include: Java, Jira, etc etc etc etc. Below I will illustrate how I have applied these technologies I have learnt to create a web based application that conforms to the CRUD (Create, Read, Update and Remove) criteria. 
+This Project aims to utilize all of the technologies I have learnt so far in the academy. These include: Intellij, Jira, Springboot, CircleC & GCP. Below I will illustrate how I have applied these technologies I have learnt to create a web based application that conforms to the CRUD (Create, Read, Update and Remove) criteria. 
 
 
 ---
