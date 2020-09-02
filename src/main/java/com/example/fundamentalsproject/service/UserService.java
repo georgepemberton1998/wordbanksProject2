@@ -14,14 +14,30 @@ import java.util.stream.Collectors;
 @Service
 public class UserService {
     private final UserRepository repo;
-    private final ModelMapper mapper;
+
 
     @Autowired
-    public UserService(UserRepository repo, ModelMapper mapper) {
+    public UserService(UserRepository repo){
         this.repo = repo;
-        this.mapper = mapper;
     }
-    private UserDeetsDTO mapToDTO(UserDeets userDeets) {
+
+    public List<UserDeets> readAllUsers(){
+        return this.repo.findAll();
+    }
+    public UserDeets createUser (UserDeets userDeets){
+
+        return this.repo.save(userDeets);
+    }
+
+    public Boolean deleteUserById (Long id){
+        if (!this.repo.existsById(id)) {
+            throw new UserNotFoundException();
+        }
+        this.repo.deleteById(id);
+        return this.repo.existsById(id);
+    }
+}
+/*    private UserDeetsDTO mapToDTO(UserDeets userDeets) {
         return this.mapper.map(userDeets, UserDeetsDTO.class);
     }
     public List<UserDeetsDTO> readAllUsers(){
@@ -38,4 +54,4 @@ public class UserService {
         this.repo.deleteById(id);
         return this.repo.existsById(id);
     }
-}
+}*/

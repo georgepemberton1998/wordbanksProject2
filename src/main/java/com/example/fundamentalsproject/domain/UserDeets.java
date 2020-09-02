@@ -16,7 +16,7 @@ public class UserDeets {
     @Column
     private String UserName;
 
-    @OneToMany(mappedBy = "UserDeets", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "UserDeets", fetch = FetchType.LAZY)
     private List<UserWord> words = new ArrayList<>();
 
     public UserDeets(){}

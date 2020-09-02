@@ -12,7 +12,7 @@ function displayWords(){
                     header.textContent = "Username: " + el.name;
                     elem.appendChild(header);
                     el.notes.forEach(words => {
-                        console.log(words) // print all notes for each notebook
+                        console.log(words)
                         let word = document.createElement('p');
                         let definition = document.createElement('p');
                         word.textContent = "Title: " + words.title;
@@ -31,6 +31,6 @@ function displayWords(){
             console.log("Oh no... handle error");
         }
     };
-    req.open("GET", "http://localhost:8080/getAllNoteBooks");
+    req.open("GET", "http://localhost:8080/getAllWords");
     req.send();
 }
