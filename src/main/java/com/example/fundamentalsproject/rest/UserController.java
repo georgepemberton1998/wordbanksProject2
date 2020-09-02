@@ -22,30 +22,6 @@ public class UserController {
 
 
     @GetMapping("/")
-    public List<UserDeets> getAllUsers() {
-        return this.userService.readAllUsers();
-    }
-
-    @PostMapping("/createUser")
-    public ResponseEntity<UserDeets> createUser(@RequestBody UserDeets userDeets){
-        return new ResponseEntity<UserDeets>(this.userService.createUser(userDeets), HttpStatus.CREATED);
-    }
-
-
-    @DeleteMapping("/deleteUser/{id}")
-    public Boolean deleteUser(@PathVariable Long id){
-        return this.userService.deleteUserById(id);
-    }
-}
- /*   private final UserService userService;
-
-    @Autowired
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
-
-
-    @GetMapping("/")
     public ResponseEntity<List<UserDeetsDTO>> getAllUsers() {
         return ResponseEntity.ok(this.userService.readAllUsers());
     }
@@ -60,4 +36,5 @@ public class UserController {
     public Boolean deleteUser(@PathVariable Long id){
         return this.userService.deleteUserById(id);
     }
-}*/
+
+}

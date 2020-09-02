@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "notes"})
 
 @Entity
 public class UserDeets {
@@ -14,15 +13,15 @@ public class UserDeets {
     private Long id;
 
     @Column
-    private String UserName;
+    private String userName;
 
-    @OneToMany(mappedBy = "UserDeets", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "userDeets", fetch = FetchType.EAGER)
     private List<UserWord> words = new ArrayList<>();
 
     public UserDeets(){}
 
     public UserDeets(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
     public Long getId() {
@@ -34,11 +33,11 @@ public class UserDeets {
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
     public List<UserWord> getWords() {

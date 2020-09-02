@@ -1,7 +1,7 @@
 package com.example.fundamentalsproject.service;
 
 import com.example.fundamentalsproject.domain.UserWord;
-import com.example.fundamentalsproject.dto.userWordDTO;
+import com.example.fundamentalsproject.dto.UserWordDTO;
 import com.example.fundamentalsproject.exceptions.WordNotFoundException;
 import com.example.fundamentalsproject.repo.WordRepository;
 import org.modelmapper.ModelMapper;
@@ -22,24 +22,24 @@ public class WordService {
         this.repo = repo;
         this.mapper = mapper;
     }
-    private userWordDTO mapToDTO(UserWord userWord) {
-        return this.mapper.map(userWord, userWordDTO.class);
+    private UserWordDTO mapToDTO(UserWord userWord) {
+        return this.mapper.map(userWord, UserWordDTO.class);
     }
 
-    public List<userWordDTO> readAllWords(){
+    public List<UserWordDTO> readAllWords(){
         return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
-    public userWordDTO createWord(UserWord userWord){
+    public UserWordDTO createWord(UserWord userWord){
         return this.mapToDTO(this.repo.save(userWord));
     }
 
-    public userWordDTO findWordById(Long id){
+    public UserWordDTO findWordById(Long id){
         return this.mapToDTO(this.repo.findById(id)
                 .orElseThrow(WordNotFoundException::new));
     }
 
-    public userWordDTO updateWord(Long id, UserWord userWord){
+    public UserWordDTO updateWord(Long id, UserWord userWord){
         UserWord update = this.repo.findById(id).orElseThrow(WordNotFoundException::new);
         update.setWord(userWord.getWord());
         update.setDefinition(userWord.getDefinition());

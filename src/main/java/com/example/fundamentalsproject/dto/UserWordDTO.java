@@ -1,14 +1,14 @@
 package com.example.fundamentalsproject.dto;
 
-public class userWordDTO {
+public class UserWordDTO {
     private Long id;
     private String word;
     private String definition;
 
-    public userWordDTO() {
+    public UserWordDTO() {
     }
 
-    public userWordDTO(String word, String definition) {
+    public UserWordDTO(String word, String definition) {
         this.word = word;
         this.definition = definition;
     }

@@ -1,7 +1,7 @@
 package com.example.fundamentalsproject.rest;
 
 import com.example.fundamentalsproject.domain.UserWord;
-import com.example.fundamentalsproject.dto.userWordDTO;
+import com.example.fundamentalsproject.dto.UserWordDTO;
 import com.example.fundamentalsproject.service.WordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,13 +21,13 @@ public class WordController {
     }
 
     @GetMapping("/Word")
-    public ResponseEntity<List<userWordDTO>> getAllWords(){
+    public ResponseEntity<List<UserWordDTO>> getAllWords(){
         return ResponseEntity.ok(this.wordService.readAllWords());
     }
 
     @PostMapping("/createWord")
-    public ResponseEntity<userWordDTO> createWord(@RequestBody UserWord word){
-        return new ResponseEntity<userWordDTO>(this.wordService.createWord(word), HttpStatus.CREATED);
+    public ResponseEntity<UserWordDTO> createWord(@RequestBody UserWord word){
+        return new ResponseEntity<UserWordDTO>(this.wordService.createWord(word), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/delete/{id}")
@@ -38,12 +38,12 @@ public class WordController {
     }
 
     @GetMapping("/getWordById/{id}")
-    public ResponseEntity<userWordDTO> getWordById(@PathVariable Long id){
+    public ResponseEntity<UserWordDTO> getWordById(@PathVariable Long id){
         return ResponseEntity.ok(this.wordService.findWordById(id));
     }
 
     @PutMapping("/updateWord/{id}")
-    public ResponseEntity<userWordDTO> updateWord(@PathVariable Long id, @RequestBody UserWord word){
+    public ResponseEntity<UserWordDTO> updateWord(@PathVariable Long id, @RequestBody UserWord word){
         return ResponseEntity.ok(this.wordService.updateWord(id, word));
     }
 

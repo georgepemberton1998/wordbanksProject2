@@ -16,7 +16,7 @@ public class UserWord {
     private String definition;
 
     @ManyToOne(targetEntity = UserDeets.class)
-    private UserDeets UserDeets;
+    private UserDeets userDeets;
 
     public UserWord() {
     }
@@ -51,10 +51,10 @@ public class UserWord {
     }
 
     public UserDeets getUserDeets() {
-        return UserDeets;
+        return userDeets;
     }
 
     public void setUserDeets(UserDeets userDeets) {
-        UserDeets = userDeets;
+        this.userDeets = userDeets;
     }
 }
