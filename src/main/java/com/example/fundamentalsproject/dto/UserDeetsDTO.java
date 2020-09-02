@@ -5,16 +5,13 @@ import java.util.List;
 
 public class UserDeetsDTO {
     private Long id;
-    private String UserName;
-    private List<UserWordDTO> userWord = new ArrayList<>();
+    private String userName;
+    private List<UserWordDTO> userWords = new ArrayList<>();
 
     public UserDeetsDTO() {
     }
 
-    public UserDeetsDTO(String userName,List<UserWordDTO> userWord) {
-        this.UserName = userName;
-        this.userWord = userWord;
-    }
+    public UserDeetsDTO(String userName) { this.userName = userName; }
 
     public Long getId() {
         return id;
@@ -25,19 +22,19 @@ public class UserDeetsDTO {
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
-    public List<UserWordDTO> getUserWord() {
-        return userWord;
+    public List<UserWordDTO> getUserWords() {
+        return userWords;
     }
 
-    public void setUserWord(List<UserWordDTO> userWord) {
-        this.userWord = userWord;
+    public void setUserWords(List<UserWordDTO> userWords) {
+        this.userWords = userWords;
     }
 }
 

@@ -50,11 +50,7 @@ public class UserWord {
         this.definition = definition;
     }
 
-    public UserDeets getUserDeets() {
-        return userDeets;
-    }
+    public UserDeets getUserDeets() { return userDeets; }
 
-    public void setUserDeets(UserDeets userDeets) {
-        this.userDeets = userDeets;
-    }
+    public void setUserDeets(UserDeets userDeets) { this.userDeets = userDeets; }
 }

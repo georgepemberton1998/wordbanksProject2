@@ -3,7 +3,6 @@ package com.example.fundamentalsproject.domain;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 public class UserDeets {
@@ -16,7 +15,7 @@ public class UserDeets {
     private String userName;
 
     @OneToMany(mappedBy = "userDeets", fetch = FetchType.EAGER)
-    private List<UserWord> words = new ArrayList<>();
+    private List<UserWord> UserWords = new ArrayList<>();
 
     public UserDeets(){}
 
@@ -40,12 +39,12 @@ public class UserDeets {
         this.userName = userName;
     }
 
-    public List<UserWord> getWords() {
-        return words;
+    public List<UserWord> getUserWords() {
+        return UserWords;
     }
 
-    public void setWords(List<UserWord> words) {
-        this.words = words;
+    public void setUserWords(List<UserWord> words) {
+        this.UserWords = words;
     }
 }
 
