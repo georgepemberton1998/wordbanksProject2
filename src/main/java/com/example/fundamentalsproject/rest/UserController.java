@@ -28,6 +28,7 @@ public class UserController {
     }
 
     @PostMapping("/createUser")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<UserDetailsDTO> createUser(@RequestBody UserDetails userDetails){
         return new ResponseEntity<UserDetailsDTO>(this.userService.createUser(userDetails), HttpStatus.CREATED);
     }
