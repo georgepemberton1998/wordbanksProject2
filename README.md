@@ -1,4 +1,7 @@
 # Fundamentals Project
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/54674645b3bb4083b3c3183be760f8b1)](https://app.codacy.com/manual/georgepemberton1998/wordbanksProject?utm_source=github.com&utm_medium=referral&utm_content=georgepemberton1998/wordbanksProject&utm_campaign=Badge_Grade_Dashboard)
+
 This Project aims to utilize all of the technologies I have learnt so far in the academy. These include: Intellij, Jira, Springboot, CircleC & GCP. Below I will illustrate how I have applied these technologies I have learnt to create a web based application that conforms to the CRUD (Create, Read, Update and Remove) criteria. 
 
 
