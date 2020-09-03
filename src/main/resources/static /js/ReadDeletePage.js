@@ -15,10 +15,13 @@ function displayNotebooks(){
                     {
                         let word = document.createElement('p');
                         let definition = document.createElement('p');
+                        let id = document.createElement("p");
                         word.textContent = "Word: " + note.word;
                         definition.textContent = "Definition: " + note.definition;
+                        id.textContent = "ID: " + note.id
                         elem.appendChild(word);
                         elem.appendChild(definition);
+                        elem.appendChild(id);
                     })
                     document.body.appendChild(elem);
                 });
