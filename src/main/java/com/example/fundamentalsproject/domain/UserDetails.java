@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class UserDeets {
+public class UserDetails {
 
     @Id
     @GeneratedValue
@@ -14,12 +14,12 @@ public class UserDeets {
     @Column
     private String userName;
 
-    @OneToMany(mappedBy = "userDeets", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "userDetails", fetch = FetchType.EAGER)
     private List<UserWord> UserWords = new ArrayList<>();
 
-    public UserDeets(){}
+    public UserDetails(){}
 
-    public UserDeets(String userName) {
+    public UserDetails(String userName) {
         this.userName = userName;
     }
 

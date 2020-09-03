@@ -1,7 +1,7 @@
 package com.example.fundamentalsproject.rest;
 
-import com.example.fundamentalsproject.domain.UserDeets;
-import com.example.fundamentalsproject.dto.UserDeetsDTO;
+import com.example.fundamentalsproject.domain.UserDetails;
+import com.example.fundamentalsproject.dto.UserDetailsDTO;
 import com.example.fundamentalsproject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,13 +22,14 @@ public class UserController {
 
 
     @GetMapping("/")
-    public ResponseEntity<List<UserDeetsDTO>> getAllUsers() {
+    @CrossOrigin(origins = "*")
+    public ResponseEntity<List<UserDetailsDTO>> getAllUsers() {
         return ResponseEntity.ok(this.userService.readAllUsers());
     }
 
     @PostMapping("/createUser")
-    public ResponseEntity<UserDeetsDTO> createUser(@RequestBody UserDeets userDeets){
-        return new ResponseEntity<UserDeetsDTO>(this.userService.createUser(userDeets), HttpStatus.CREATED);
+    public ResponseEntity<UserDetailsDTO> createUser(@RequestBody UserDetails userDetails){
+        return new ResponseEntity<UserDetailsDTO>(this.userService.createUser(userDetails), HttpStatus.CREATED);
     }
 
 

@@ -3,15 +3,15 @@ package com.example.fundamentalsproject.dto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDeetsDTO {
+public class UserDetailsDTO {
     private Long id;
     private String userName;
     private List<UserWordDTO> userWords = new ArrayList<>();
 
-    public UserDeetsDTO() {
+    public UserDetailsDTO() {
     }
 
-    public UserDeetsDTO(String userName) { this.userName = userName; }
+    public UserDetailsDTO(String userName) { this.userName = userName; }
 
     public Long getId() {
         return id;

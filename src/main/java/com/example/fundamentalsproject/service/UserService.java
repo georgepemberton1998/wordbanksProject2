@@ -1,7 +1,7 @@
 package com.example.fundamentalsproject.service;
 
-import com.example.fundamentalsproject.domain.UserDeets;
-import com.example.fundamentalsproject.dto.UserDeetsDTO;
+import com.example.fundamentalsproject.domain.UserDetails;
+import com.example.fundamentalsproject.dto.UserDetailsDTO;
 import com.example.fundamentalsproject.exceptions.UserNotFoundException;
 import com.example.fundamentalsproject.repo.UserRepository;
 import org.modelmapper.ModelMapper;
@@ -21,14 +21,14 @@ public class UserService {
         this.repo = repo;
         this.mapper = mapper;
     }
-    private UserDeetsDTO mapToDTO(UserDeets userDeets) {
-        return this.mapper.map(userDeets, UserDeetsDTO.class);
+    private UserDetailsDTO mapToDTO(UserDetails userDetails) {
+        return this.mapper.map(userDetails, UserDetailsDTO.class);
     }
-    public List<UserDeetsDTO> readAllUsers(){
+    public List<UserDetailsDTO> readAllUsers(){
         return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
-    public UserDeetsDTO createUser (UserDeets userDeets){
-        return this.mapToDTO(this.repo.save(userDeets));
+    public UserDetailsDTO createUser (UserDetails userDetails){
+        return this.mapToDTO(this.repo.save(userDetails));
     }
 
     public Boolean deleteUserById (Long id){
