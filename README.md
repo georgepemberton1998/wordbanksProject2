@@ -13,22 +13,21 @@ Here I have included some snapshots of the application working.
 
 ---
 ## Contents
-- [Fundamentals Project](#fundamentals-project)
-  - [Key Terms Dictionary](#key-terms-dictionary)
-  - [Contents](#contents)
-  - [Inspiration](#inspiration)
-  - [Design](#design)
-  - [Risk Assessment](#risk-assessment)
-  - [Creation](#creation)
-    - [Planning](#planning)
-    - [Version Control](#version-control)
-    - [Cloud Server](#cloud-server)
-    - [Database](#database)
-    - [Front-End](#front-end)
-    - [Back-End](#back-end)
-  - [Testing](#testing)
-  - [System Integration](#system-integration)
-  - [Additional Information & Resources](#additional-information--resources)
+-[Fundamentals Project](#fundamentals-project)
+  -[Key Terms Dictionary](#key-terms-dictionary)
+  -[Contents](#contents)
+  -[Inspiration](#inspiration)
+  -[Design](#design)
+  -[Risk Assessment](#risk-assessment)
+  -[Creation](#creation)
+    -[Planning](#planning)
+    -[Version Control](#version-control)
+    -[Cloud Server](#cloud-server)
+    -[Database](#database)
+    -[Front-End](#front-end)
+    -[Back-End](#back-end)
+  -[System Integration](#system-integration)
+  -[Additional Information & Resources](#additional-information--resources)
 
   
  ----
@@ -89,10 +88,6 @@ The back-end also works to make my ERD diagram come into fruition. I used Spring
 
 
 Finally, it was used to initialise the web server & the relevant domain addresses, open on port 8080.
-
-## Testing
-unit testing in Junit 
-live testing done with CIRCLECI
 
 
 ## System Integration
