@@ -24,6 +24,7 @@ Below I have included some snapshots of the working application.
   - [Planning](#planning)
   - [Version Control](#version-control)
   - [Cloud Server](#cloud-server)
+  - [CI Pipeline](#ci-pipeline)
   - [Database](#database)
   - [Front-End](#front-end)
   - [Back-End](#back-end)
@@ -69,6 +70,10 @@ This has given me confidence that my application data is safe from deletion and 
 
 ### Cloud Server
 The cloud server chosen to host this application for the meantime is GCP. This is because they offer a sufficient free trial for this kind of project and provide a highly secure and reliable server. 
+
+
+### CI Pipeline
+
 
 ### Database
 The Database for this project is formatted in MySQL, hosted on the GCP server. Currently, the architecture is simple. 2 Databases, one for user Details, the other for words & their corresponding definition. These Databases are connected by the UserID key, allowing each user to create their own WordBank, and hopefully, in the future, view/import other users wordbanks. This structure has allowed for a secure database (protected by GCP) with room for expansion should I decide to implement the previously discussed features.
