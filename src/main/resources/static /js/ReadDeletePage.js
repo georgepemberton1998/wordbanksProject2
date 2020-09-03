@@ -7,24 +7,24 @@ function displayNotebooks(){
                 let stuff = JSON.parse(req.response);
                 console.log(stuff)
                 stuff.forEach(el => {
-                    let elem = document.createElement('div');
-                    let header = document.createElement('h1');
+                    let elem = document.createElement("div");
+                    let header = document.createElement("h1");
                     header.textContent = el.userName + "'s Wordbank";
                     elem.appendChild(header);
                     el.userWords.forEach(note =>
                     {
-                        let word = document.createElement('p');
-                        let definition = document.createElement('p');
+                        let word = document.createElement("p");
+                        let definition = document.createElement("p");
                         let id = document.createElement("p");
                         word.textContent = "Word: " + note.word;
                         definition.textContent = "Definition: " + note.definition;
-                        id.textContent = "ID: " + note.id
+                        id.textContent = "ID: " + note.id;
                         elem.appendChild(word);
                         elem.appendChild(definition);
                         elem.appendChild(id);
                         let pbreak = document.createElement("br")
-                        elem.appendChild(pbreak)
-                    })
+                        elem.appendChild(pbreak);
+                    });
                     document.body.appendChild(elem);
                 });
             } else {

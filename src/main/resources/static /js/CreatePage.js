@@ -1,5 +1,4 @@
 function submitWord(){
-    console.log("hello")
     let elements = document.getElementById("wordForm").elements;
     console.log(elements);
     let obj ={};
