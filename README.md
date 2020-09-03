@@ -13,21 +13,20 @@ Here I have included some snapshots of the application working.
 
 ---
 ## Contents
-- [Fundamentals Project](#fundamentals-project)
-  - [Key Terms Dictionary](#key-terms-dictionary)
-  - [Contents](#contents)
-  - [Inspiration](#inspiration)
-  - [Design](#design)
-  - [Risk Assessment](#risk-assessment)
-  - [Creation](#creation)
-    - [Planning](#planning)
-    - [Version Control](#version-control)
-    - [Cloud Server](#cloud-server)
-    - [Database](#database)
-    - [Front-End](#front-end)
-    - [Back-End](#back-end)
-  - [System Integration](#system-integration)
-  - [Additional Information & Resources](#additional-information--resources)
+- [Key Terms Dictionary](#key-terms-dictionary)
+- [Contents](#contents)
+- [Inspiration](#inspiration)
+- [Design](#design)
+- [Risk Assessment](#risk-assessment)
+- [Creation](#creation)
+  - [Planning](#planning)
+  - [Version Control](#version-control)
+  - [Cloud Server](#cloud-server)
+  - [Database](#database)
+  - [Front-End](#front-end)
+  - [Back-End](#back-end)
+- [System Integration](#system-integration)
+- [Additional Information & Resources](#additional-information--resources)
 
   
  ----
