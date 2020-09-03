@@ -22,6 +22,8 @@ function displayNotebooks(){
                         elem.appendChild(word);
                         elem.appendChild(definition);
                         elem.appendChild(id);
+                        let pbreak = document.createElement("br")
+                        elem.appendChild(pbreak)
                     })
                     document.body.appendChild(elem);
                 });
