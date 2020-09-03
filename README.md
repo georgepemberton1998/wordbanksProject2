@@ -73,7 +73,9 @@ The cloud server chosen to host this application for the meantime is GCP. This i
 
 
 ### CI Pipeline
-
+<p align="left">
+  <img width="700" height="400" src="https://i.imgur.com/xChtT57.png">
+</p>
 
 ### Database
 The Database for this project is formatted in MySQL, hosted on the GCP server. Currently, the architecture is simple. 2 Databases, one for user Details, the other for words & their corresponding definition. These Databases are connected by the UserID key, allowing each user to create their own WordBank, and hopefully, in the future, view/import other users wordbanks. This structure has allowed for a secure database (protected by GCP) with room for expansion should I decide to implement the previously discussed features.
