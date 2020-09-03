@@ -5,20 +5,20 @@ jobs:
     machine:
       enabled: true
     steps:
-      - run: echo "Tests can run here!"
+      - run: echo "Test can run here!"
   deploy:
     machine:
       enabled: true
     steps:
       - run:
           name: Install Java & Maven
-          command: ssh $SSH_USER@$SSH_HOST "sudo apt-get update && sudo apt-get install -y curl git && curl -y maven | sudo -E bash - && sudo apt-get install -y openjdk-8-jdk"
+          command: ssh $SSH_USER@$SSH_HOST "sudo apt-get update && sudo apt-get install -y curl git && sudo apt-get install -y openjdk-8-jdk "
       - run:
           name: Clone Repo & Install Application Dependencies
-          command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/georgepemberton1998/wordbanksProject.git && cd ~/wordbanksProject && maven install"
+          command: ssh $SSH_USER@$SSH_HOST "git clone https://github.com/georgepemberton1998/wordbanksProject.git && cd ~/wordbanksProject && sudo apt-get install -y maven"
       - run:
           name: Deploy Application
-          command: ssh $SSH_USER@$SSH_HOST "cd ~/wordbanksProject && maven run serve"
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/wordbanksProject && mvn verify"
 workflows:
   version: 2.1
   test-and-deploy:
