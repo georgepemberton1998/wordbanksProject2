@@ -8,8 +8,10 @@ This Project aims to utilize all of the technologies I have learnt so far in the
 ---
 ## Key Terms Dictionary
 
-Here I have included some snapshots of the application working. 
-(gif of its functionality)
+Below I have included some snapshots of the working application. 
+<p align="left">
+  <img width="700" height="400" src="https://i.imgur.com/fwHiNJD.png">
+</p>
 
 ---
 ## Contents
