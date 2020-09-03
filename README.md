@@ -74,7 +74,7 @@ The cloud server chosen to host this application for the meantime is GCP. This i
 
 ### CI Pipeline
 <p align="left">
-  <img width="700" height="400" src="https://i.imgur.com/xChtT57.png">
+  <img width="700" height="400" src="https://i.imgur.com/NtCeTLY.png">
 </p>
 
 ### Database
