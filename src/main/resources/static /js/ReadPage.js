@@ -3,9 +3,9 @@ function displayNotebooks(){
     req.onreadystatechange = () => {
         if (req.status === 200 && req.readyState === 4) {
             if (req.getResponseHeader("Content-Type") === "application/json") {
-                console.log("oh look its some JSON: " + req.responseText);
+                //console.log("oh look its some JSON: " + req.responseText);
                 let stuff = JSON.parse(req.response);
-                console.log(stuff)
+               // console.log(stuff)
                 stuff.forEach(el => {
                     let elem = document.createElement("div");
                     let header = document.createElement("h1");

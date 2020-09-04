@@ -1,5 +1,6 @@
 function submitUser(){
     let elements = document.getElementById("userForm").elements;
+    console.log(elements)
     let obj ={};
     let item = elements.item(0);
     obj[item.name] = item.value;

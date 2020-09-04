@@ -35,8 +35,11 @@ public class UserController {
 
 
     @DeleteMapping("/deleteUser/{id}")
-    public Boolean deleteUser(@PathVariable Long id){
-        return this.userService.deleteUserById(id);
+    @CrossOrigin(origins = "*")
+    public ResponseEntity<?>  deleteUser(@PathVariable Long id){
+        return this.userService.deleteUserById(id)
+                ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
+                : ResponseEntity.noContent().build();
     }
 
 }
