@@ -8,8 +8,10 @@ This Project aims to utilize all of the technologies I have learnt so far in the
 ---
 ## Key Terms Dictionary
 
-Here I have included some snapshots of the application working. 
-(gif of its functionality)
+Below I have included some snapshots of the working application. 
+<p align="left">
+  <img width="700" height="400" src="https://i.imgur.com/fwHiNJD.png">
+</p>
 
 ---
 ## Contents
@@ -22,6 +24,7 @@ Here I have included some snapshots of the application working.
   - [Planning](#planning)
   - [Version Control](#version-control)
   - [Cloud Server](#cloud-server)
+  - [CI Pipeline](#ci-pipeline)
   - [Database](#database)
   - [Front-End](#front-end)
   - [Back-End](#back-end)
@@ -68,8 +71,19 @@ This has given me confidence that my application data is safe from deletion and 
 ### Cloud Server
 The cloud server chosen to host this application for the meantime is GCP. This is because they offer a sufficient free trial for this kind of project and provide a highly secure and reliable server. 
 
+
+### CI Pipeline
+<p align="left">
+  <img width="700" height="400" src="https://i.imgur.com/NtCeTLY.png">
+</p>
+
 ### Database
-mySQL- hosted on GCP
+The Database for this project is formatted in MySQL, hosted on the GCP server. Currently, the architecture is simple. 2 Databases, one for user Details, the other for words & their corresponding definition. These Databases are connected by the UserID key, allowing each user to create their own WordBank, and hopefully, in the future, view/import other users wordbanks. This structure has allowed for a secure database (protected by GCP) with room for expansion should I decide to implement the previously discussed features.
+
+Below I have included an example ERD diagram to futher illustrate my database structure. 
+<p align="left">
+  <img width="700" height="250" src="https://i.imgur.com/rP7wqtQ.png">
+</p>
 
 ### Front-End
 The front end of this project is written in HTML. While I would have liked to encorperate some CSS & make the web page more aesthetically pleasing, time constraints have prevent this.
