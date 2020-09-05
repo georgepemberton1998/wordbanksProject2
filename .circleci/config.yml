@@ -21,6 +21,12 @@ jobs:
       - run:
           name: Deploy Application
           command: ssh $SSH_USER@$SSH_HOST "cd ~/wordbanksProject && mvn verify"
+      - run:
+          name: Delete Old DataBase
+          command: ssh $SSH_USER@$SSH_HOST "rm -f userWord.mv.db"
+      - run:
+          name: Run application
+          command: ssh $SSH_USER@$SSH_HOST "cd ~/wordbanksProject && mvn -Dmaven.test.skip=true spring-boot:run"
 workflows:
   version: 2.1
   test-and-deploy:
