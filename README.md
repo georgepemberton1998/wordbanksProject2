@@ -2,7 +2,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/54674645b3bb4083b3c3183be760f8b1)](https://app.codacy.com/manual/georgepemberton1998/wordbanksProject?utm_source=github.com&utm_medium=referral&utm_content=georgepemberton1998/wordbanksProject&utm_campaign=Badge_Grade_Dashboard)
 
-This Project aims to utilize all of the technologies I have learnt so far in the academy. These include: Intellij, Jira, Springboot, CircleC & GCP. Below I will illustrate how I have applied these technologies I have learnt to create a web based application that conforms to the CRUD (Create, Read, Update and Remove) criteria. 
+This Project aims to utilize all of the technologies I have learnt so far in the academy. These include: Intellij, Jira, Springboot, CircleCI & GCP. Below I will illustrate how I have applied the technologies I have learnt to create a web based application that conforms to the CRUD (Create, Read, Update and Remove) criteria. 
 
 
 ---
@@ -32,7 +32,7 @@ Below I have included some snapshots of the working application.
 
  ----
  ## Inspiration
- Upon starting the course as a cloud native trainee I quickly recoginsed that a lot of the key terms were going straight over my head, So I began noting down any words I was unfamiliar with, along with their definition. When this project was proposed, I recognised that a word bank fir the CRUD criteria perfectly. 
+ Upon starting the course as a cloud native trainee I quickly recoginsed that a lot of the key terms were going straight over my head, So I began noting down any words I was unfamiliar with, along with their definition. When this project was proposed, I recognised that a word bank would similar to the one I was using would fit the CRUD criteria perfectly. 
 
 <p align="left">
   <img width="383" height="250" src="https://i.imgur.com/rFfg6L6.png">
@@ -40,7 +40,7 @@ Below I have included some snapshots of the working application.
 
 ## Design
 
-The basic functionality of the application is very simple. The user can create an account, log into their account and create their own word bank. However, throughout this project I have used many tools to streamline production (See, [Planning](#planning), [Version Control](#Version-Control), etc.. ). 
+The functionality of the application is very simple, the user can create an account and create their own word bank. However, throughout this project I have used many tools to streamline production (See, [Planning](#planning), [Version Control](#Version-Control), etc.. ). 
 
 While the MVP is quite simple, I have plans to implement additional features that I have not yet been able to implement. For example, <br> 1. The ability for the user to search for terms they have added.<br> 2. To have a seperate bank of pre-filled definitions accessable to the user.<br> 3. Improve the database structure so that the user can have two different wordbanks, the second one being used for words the user has grown comfortable with. The user would be able to "push" words between word banks. 
 <p align="left">
@@ -57,7 +57,7 @@ While in reality the risks associated with this project are relatively low, a ri
 ## Creation
 
 ### Planning
-This project in its very nature required an agile planning strategy. I learned the technologies required as I progressed through the project. This made it impossible for me to properly plan the project at the begining. Also, as I learnt the relevant technologies, previous ideas proved too difficult considering the time constraint. Because of this, I used Jira to plan my project, which allowed for easily digestable, agile planning. Below I have included a snapshot of my backlog taken just before I had my application up and running. 
+This project in its very nature required an agile planning strategy. I learned the technologies required as I progressed through the project. This made it impossible for me to holistically plan the project at the begining. Also, as I learnt the relevant technologies, previous ideas proved too difficult considering the time constraint. Because of this, I used Jira to plan my project, which allowed for easily digestable, agile planning. Below I have included a snapshot of my backlog taken just before I had my application up and running. 
 
 <p align="left">
   <img width="383" height="250" src="https://i.imgur.com/7z9SHO2.png">
@@ -97,3 +97,5 @@ The back-end also works to make my ERD diagram come into fruition. I used Spring
 Finally, it was used to initialise the web server & the relevant domain addresses, open on port 8080.
 
 ## Additional Information & Resources
+
+Prepared by George Pemberton
