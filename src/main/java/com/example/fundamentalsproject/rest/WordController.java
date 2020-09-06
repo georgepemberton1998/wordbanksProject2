@@ -21,16 +21,19 @@ public class WordController {
     }
 
     @GetMapping("/Word")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<List<UserWordDTO>> getAllWords(){
         return ResponseEntity.ok(this.wordService.readAllWords());
     }
 
     @PostMapping("/createWord")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<UserWordDTO> createWord(@RequestBody UserWord word){
         return new ResponseEntity<UserWordDTO>(this.wordService.createWord(word), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/delete/{id}")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<?> deleteWord(@PathVariable Long id){
         return this.wordService.deleteWordById(id)
                 ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
@@ -38,11 +41,13 @@ public class WordController {
     }
 
     @GetMapping("/getWordById/{id}")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<UserWordDTO> getWordById(@PathVariable Long id){
         return ResponseEntity.ok(this.wordService.findWordById(id));
     }
 
     @PutMapping("/updateWord/{id}")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<UserWordDTO> updateWord(@PathVariable Long id, @RequestBody UserWord word){
         return ResponseEntity.ok(this.wordService.updateWord(id, word));
     }
