@@ -15,20 +15,20 @@ Below I have included some snapshots of the working application.
 
 ---
 ## Contents
-- [Key Terms Dictionary](#key-terms-dictionary)
-- [Contents](#contents)
-- [Inspiration](#inspiration)
-- [Design](#design)
-- [Risk Assessment](#risk-assessment)
-- [Creation](#creation)
-  - [Planning](#planning)
-  - [Version Control](#version-control)
-  - [Cloud Server](#cloud-server)
-  - [CI Pipeline](#ci-pipeline)
-  - [Database](#database)
-  - [Front-End](#front-end)
-  - [Back-End](#back-end)
-- [Additional Information & Resources](#additional-information--resources)
+-  [Key Terms Dictionary](#key-terms-dictionary)
+-  [Contents](#contents)
+-  [Inspiration](#inspiration)
+-  [Design](#design)
+-  [Risk Assessment](#risk-assessment)
+-  [Creation](#creation)
+  -   [Planning](#planning)
+  -   [Version Control](#version-control)
+  -   [Cloud Server](#cloud-server)
+  -   [CI Pipeline](#ci-pipeline)
+  -   [Database](#database)
+  -   [Front-End](#front-end)
+  -   [Back-End](#back-end)
+-  [Additional Information & Resources](#additional-information--resources)
 
  ----
  ## Inspiration
