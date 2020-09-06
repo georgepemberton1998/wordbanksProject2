@@ -8,7 +8,7 @@ function submitWord(){
     }
     console.log(obj)
     const req = new XMLHttpRequest();
-    req.open("POST", "http://34.89.77.230:8080/createWord");
+    req.open("POST", "http://localhost:8080/createWord");
     req.onload = () => {
         if (req.status === 200 && req.readyState === 4) {
              console.log("Server Responded with: " + req.responseText);
