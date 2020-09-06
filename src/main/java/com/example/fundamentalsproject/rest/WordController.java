@@ -26,7 +26,6 @@ public class WordController {
     }
 
     @PostMapping("34.89.77.230/createWord")
-    @CrossOrigin(origins =  "*")
     public ResponseEntity<UserWordDTO> createWord(@RequestBody UserWord word){
         return new ResponseEntity<UserWordDTO>(this.wordService.createWord(word), HttpStatus.CREATED);
     }
