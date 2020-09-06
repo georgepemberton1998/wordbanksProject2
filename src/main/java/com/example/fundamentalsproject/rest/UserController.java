@@ -21,20 +21,20 @@ public class UserController {
     }
 
 
-    @GetMapping("/")
+    @GetMapping("34.89.77.230/")
     @CrossOrigin(origins = "*")
     public ResponseEntity<List<UserDetailsDTO>> getAllUsers() {
         return ResponseEntity.ok(this.userService.readAllUsers());
     }
 
-    @PostMapping("/createUser")
+    @PostMapping("34.89.77.230/createUser")
     @CrossOrigin(origins = "*")
     public ResponseEntity<UserDetailsDTO> createUser(@RequestBody UserDetails userDetails){
         return new ResponseEntity<UserDetailsDTO>(this.userService.createUser(userDetails), HttpStatus.CREATED);
     }
 
 
-    @DeleteMapping("/deleteUser/{id}")
+    @DeleteMapping("34.89.77.230/deleteUser/{id}")
     @CrossOrigin(origins = "*")
     public ResponseEntity<?>  deleteUser(@PathVariable Long id){
         return this.userService.deleteUserById(id)

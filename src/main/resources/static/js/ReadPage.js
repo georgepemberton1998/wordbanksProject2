@@ -36,6 +36,6 @@ function displayNotebooks(){
             console.log("Oh no... handle error");
         }
     };
-    req.open("GET", "http://localhost:8080/");
+    req.open("GET", "http://34.89.77.230:8080/");
     req.send();
 }
