@@ -21,18 +21,18 @@ public class UserController {
     }
 
 
-    @GetMapping("34.89.77.230/")
+    @GetMapping("/")
     public ResponseEntity<List<UserDetailsDTO>> getAllUsers() {
         return ResponseEntity.ok(this.userService.readAllUsers());
     }
 
-    @PostMapping("34.89.77.230/createUser")
+    @PostMapping("/createUser")
     public ResponseEntity<UserDetailsDTO> createUser(@RequestBody UserDetails userDetails){
         return new ResponseEntity<UserDetailsDTO>(this.userService.createUser(userDetails), HttpStatus.CREATED);
     }
 
 
-    @DeleteMapping("34.89.77.230/deleteUser/{id}")
+    @DeleteMapping("3/deleteUser/{id}")
     public ResponseEntity<?>  deleteUser(@PathVariable Long id){
         return this.userService.deleteUserById(id)
                 ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()

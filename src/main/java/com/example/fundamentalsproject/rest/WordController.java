@@ -20,29 +20,29 @@ public class WordController {
         this.wordService = wordService;
     }
 
-    @GetMapping("34.89.77.230/Word")
+    @GetMapping("/Word")
     public ResponseEntity<List<UserWordDTO>> getAllWords(){
         return ResponseEntity.ok(this.wordService.readAllWords());
     }
 
-    @PostMapping("34.89.77.230/createWord")
+    @PostMapping("/createWord")
     public ResponseEntity<UserWordDTO> createWord(@RequestBody UserWord word){
         return new ResponseEntity<UserWordDTO>(this.wordService.createWord(word), HttpStatus.CREATED);
     }
 
-    @DeleteMapping("34.89.77.230/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> deleteWord(@PathVariable Long id){
         return this.wordService.deleteWordById(id)
                 ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
                 : ResponseEntity.noContent().build();
     }
 
-    @GetMapping("34.89.77.230/getWordById/{id}")
+    @GetMapping("/getWordById/{id}")
     public ResponseEntity<UserWordDTO> getWordById(@PathVariable Long id){
         return ResponseEntity.ok(this.wordService.findWordById(id));
     }
 
-    @PutMapping("34.89.77.230/updateWord/{id}")
+    @PutMapping("/updateWord/{id}")
     public ResponseEntity<UserWordDTO> updateWord(@PathVariable Long id, @RequestBody UserWord word){
         return ResponseEntity.ok(this.wordService.updateWord(id, word));
     }
